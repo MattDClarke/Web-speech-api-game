@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Speech word game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Say It Game<span>💬</span></h1>
+  <button class="button-start">Start Game</button>
+  <button class="button-scores">High Scores</button>
+  <div><span class="start-countdown"></span></div>
+  <div class="game-info">
+    <span></span>
+    <span class="current-score">Score: <span class="score"></span></span>
+    <span class="time-left">Time left: <span class="timer"></span></span>
+  </div>
+  <div class="words"></div>
+  <div class="modal-outer">
+    <div class="modal-inner">
+      <button class="close">&times;</button>
+      <span class="crown-emoji">👑</span>
+      <h2>High Scores</h2>
+      <ol class="scores-list"></ol>
+    </div>
+  </div>
+  <script src="./speech.js" type="module"></script>
+
+</body>
+
+</html>
