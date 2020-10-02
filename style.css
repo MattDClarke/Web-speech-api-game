@@ -100,11 +100,11 @@ button:hover {
 
 @keyframes jump {
   from {
-    transform: scale(2) rotate(-10deg);
+    transform: perspective(100px) rotate(-20deg) rotateX(0deg) translateY(2px) scale(2);
     box-shadow: var(--box-shadow);
   }
   to {
-    transform: scale(1) rotate(0);
+    transform: perspective(0) rotate(0) rotateX(360deg) translateY(0) scale(1);
   }
 }
 
